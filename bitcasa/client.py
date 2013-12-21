@@ -5,9 +5,7 @@ import requests
 from bitcasa.filesystem import BitcasaFile, BitcasaFolder
 from bitcasa.exception import BitcasaException
 
-DEV = 'https://api.dev.bitcasa.com:4443/v1/'
-PROD = 'https://developer.api.bitcasa.com/v1/'
-BASEURL = PROD
+BASEURL = 'https://developer.api.bitcasa.com/v1/'
 
 class BitcasaClient(object):
     def __init__(self, id, secret, redirect_url, access_token=None):
