@@ -26,6 +26,6 @@ In order to access the API successfully, you need to first get an API key from B
 
 Using The Bitcasa API
 ===============
-In order to access a Bitcasa user's files, you'll need to do authorize your application with the user via our authentication exchange. Once completed, you'll gain an access token that you can utilize for API usage.
+In order to access a Bitcasa user's files, you'll need to authorize your application with the user via our authentication exchange. Once completed, you'll gain an access token that you can utilize for API usage.
 
 Examine the tests for examples of usage.
