@@ -25,6 +25,7 @@ setup(
     maintainer=bitcasa.__author__,
     maintainer_email='api@bitcasa.com',
     url='http://www.bitcasa.com/',
+    download_url='https://github.com/bitcasa/bitcasa-sdk-python/tarball/v1.0',
     description=('This is the Python SDK for the Bitcasa API.'),
     long_description=README,
     classifiers=['Development Status :: 5 - Production/Stable',
