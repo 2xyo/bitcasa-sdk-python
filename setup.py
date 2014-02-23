@@ -2,7 +2,7 @@
 import os
 import sys
 
-execfile('bitcasa/version.py')
+exec(open('bitcasa/version.py').read())
 
 try:
     from setuptools import setup
