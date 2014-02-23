@@ -2,7 +2,7 @@
 import os
 import sys
 
-import bitcasa
+execfile('bitcasa/version.py')
 
 try:
     from setuptools import setup
@@ -18,11 +18,11 @@ with open('README.rst') as f:
     README = f.read()
 
 setup(
-    name=bitcasa.__title__,
-    version=bitcasa.__version__,
-    author=bitcasa.__author__,
+    name=__title__,
+    version=__version__,
+    author=__author__,
     author_email='api@bitcasa.com',
-    maintainer=bitcasa.__author__,
+    maintainer=__author__,
     maintainer_email='api@bitcasa.com',
     url='http://www.bitcasa.com/',
     download_url='https://github.com/bitcasa/bitcasa-sdk-python/tarball/v1.0',
@@ -39,12 +39,12 @@ setup(
                  'Programming Language :: Python :: 3.2',
                  'Programming Language :: Python :: 3.3',
                  'Topic :: Utilities'],
-    license=bitcasa.__license__,
+    license=__license__,
     keywords='bitcasa sdk',
-    packages=[bitcasa.__title__, '{0}.tests'.format(bitcasa.__title__)],
-    package_data={bitcasa.__title__: ['../testing.ini',
+    packages=[__title__, '{0}.tests'.format(__title__)],
+    package_data={__title__: ['../testing.ini',
                                  '../README.rst',
                                  '../LICENSE']},
     install_requires=['requests>=1.2.3', 'nose', 'nose-testconfig'],
     entry_points={},
-    test_suite='{0}.tests'.format(bitcasa.__title__))
+    test_suite='{0}.tests'.format(__title__))
